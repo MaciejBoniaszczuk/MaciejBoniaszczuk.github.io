@@ -1,1 +1,0 @@
-# MaciejBoniaszczuk.github.io
