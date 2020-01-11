@@ -31,6 +31,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media(max-width: $mobile) {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
 }
 
 .project {
@@ -60,9 +64,8 @@
     &__link {
         color: $blue;
         font-weight: 500;
-        font-size: 18px;
-        text-decoration: none;
-        line-height: 32px;
+        font-size: 1.125rem;
+        text-decoration: 2rem;
         display: inline-flex;
         align-items: center;
 
@@ -72,7 +75,7 @@
 
             &::after {
                 content: '';
-                height: 32px;
+                height: 2rem;
                 width: 2px;
                 background: #CBD2D9;
                 display: block;
