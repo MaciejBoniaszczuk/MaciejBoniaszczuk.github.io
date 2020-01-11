@@ -1,5 +1,6 @@
 ![Maciej Bonaiszczuk Personal CV](src/assets/img/cover.png)
 
+
 # Maciej Bonaiszczuk Personal CV 😉 
 
 ## Tools & technologies I've used
