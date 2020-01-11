@@ -23,7 +23,7 @@ fetch('https://api.github.com/users/maciejboniaszczuk/repos?sort=updated&directi
            <img class="project__logo" src="../assets/img/github.svg" alt="">
            <h3 class="project__title">${name}</h3>
            ${
-             description ? `<p class="project__description">${description} - ${homepage}</p>` : 'No description 😞 '
+             description ? `<p class="project__description">${description}</p>` : 'No description 😞 '
            }
           
         </div>
