@@ -1,9 +1,11 @@
-# wtf-gulp-starter
+![Maciej Bonaiszczuk Personal CV](src/assets/img/cover.png)
 
-`npm install -g gulp-cli`
+# Maciej Bonaiszczuk Personal CV 😉 
 
-`npm install`
+## Tools & technologies I've used
 
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+- Visual Studio Code
+- HTML5 semantic
+- SASS
+- Fetch API
+- CSS Grid
