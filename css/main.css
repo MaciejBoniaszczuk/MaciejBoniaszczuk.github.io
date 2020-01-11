@@ -414,7 +414,8 @@ template {
     margin-top: calc(1.5rem + 4px);
     -webkit-column-gap: 1.5rem;
        -moz-column-gap: 1.5rem;
-            column-gap: 1.5rem; }
+            column-gap: 1.5rem;
+    font-size: 1.2rem; }
   .skills-list__title {
     font-weight: 600;
     font-size: 2rem;
