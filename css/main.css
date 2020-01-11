@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -307,16 +308,310 @@ template {
 [hidden] {
   display: none; }
 
+.hero {
+  max-width: 1216px;
+  padding: calc(8rem - 16px) 16px 11.5rem;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .hero {
+      padding: 64px 16px 120px; } }
+  .hero__description {
+    color: #52606D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 780px;
+    margin-bottom: 3.75rem; }
+  .hero__image {
+    width: 120px;
+    height: 120px; }
+    @media (max-width: 767px) {
+      .hero__image {
+        width: 80px;
+        height: 80px; } }
+  .hero__link {
+    color: #0593FB;
+    font-weight: 500; }
+  .hero__mail {
+    color: #0593FB;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0593FB; }
+  .hero__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    max-width: 780px;
+    margin: 2rem 0 1rem; }
+    @media (max-width: 767px) {
+      .hero__title {
+        margin-top: 16px 0 8px; } }
+
+.skills {
+  max-width: 1216px;
+  padding: 0 16px;
+  margin: 0 auto 8rem; }
+  .skills__title {
+    font-size: 2.25rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-bottom: 2px solid #E5E8EC; }
+    @media (max-width: 767px) {
+      .skills__title {
+        text-align: center; } }
+
+.skills-list {
+  display: -ms-grid;
+  display: grid;
+  padding: 8rem 0 0;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 767px) {
+    .skills-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      padding: 5rem 0 0; } }
+  .skills-list__item {
+    color: #52606D;
+    padding: 11px 0 11px 30px;
+    position: relative;
+    min-height: 40px; }
+    @media (max-width: 767px) {
+      .skills-list__item {
+        padding-left: 20px; } }
+    .skills-list__item::before {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/check-green.svg"); }
+      .skills-list--violet .skills-list__item::before {
+        background-image: url("../assets/img/check-violet.svg"); }
+      .skills-list--blue .skills-list__item::before {
+        background-image: url("../assets/img/check-blue.svg"); }
+      @media (max-width: 767px) {
+        .skills-list__item::before {
+          width: 12px;
+          height: 12px;
+          top: 12px;
+          background-size: contain; } }
+  .skills-list__list {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    list-style-type: none;
+    padding: 0;
+    margin-top: calc(1.5rem + 4px);
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem; }
+  .skills-list__title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0; }
+    .skills-list__title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #06C847;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+      .skills-list--violet .skills-list__title::before {
+        background: #653CAD; }
+      .skills-list--blue .skills-list__title::before {
+        background: #2251CC; }
+
+.projects {
+  background: #F5F7FA;
+  padding: 8rem 0; }
+  .projects__title {
+    font-size: 2.25rem;
+    margin: 0 auto 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 16px;
+    max-width: 1216px; }
+  .projects__description {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: #52606D;
+    max-width: 580px;
+    margin: 0 0 4rem; }
+
+.projects-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  @media (max-width: 767px) {
+    .projects-list {
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); } }
+
+.project {
+  background: #fff;
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .project__container {
+    padding: 3rem; }
+  .project__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin: 0; }
+  .project__footer {
+    background: #F5F7FA;
+    padding: 1rem 3rem;
+    text-align: right; }
+  .project__link {
+    color: #0593FB;
+    font-weight: 500;
+    font-size: 1.125rem;
+    -webkit-text-decoration: 2rem;
+            text-decoration: 2rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .project__link + .project__link {
+      margin-left: 50px;
+      position: relative; }
+      .project__link + .project__link::after {
+        content: '';
+        height: 2rem;
+        width: 2px;
+        background: #CBD2D9;
+        display: block;
+        position: absolute;
+        left: -26px;
+        pointer-events: none; }
+    .project__link::before {
+      content: '';
+      display: block;
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+      background: url("../assets/img/demo.svg") center center no-repeat; }
+    .project__link--code::before {
+      background: url("../assets/img/source.svg") center center no-repeat; }
+  .project__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin: 1rem 0 .5rem; }
+
+.contact {
+  background: #171F3F;
+  color: #fff;
+  padding-bottom: calc(8rem - 16px); }
+  .contact__mail {
+    color: #0593FB;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0593FB;
+    display: inline-block;
+    margin: 3rem 0 0 0; }
+  .contact__description {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 580px;
+    margin: 0 0 1.5rem; }
+  .contact__title {
+    font-size: 2.25rem;
+    margin: 0 auto 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 8rem 16px 0;
+    max-width: 1216px; }
+    .contact__title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #0593FB;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social__item + .social__item {
+    margin-left: 1.5rem; }
+  .social__item__link {
+    text-decoration: none; }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 11px;
+  scroll-behavior: smooth; }
+  @media (max-width: 767px) {
+    html {
+      font-size: 12px; } }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #171F3F;
+  background: #653CAD;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  border: 16px solid #171F3F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (max-width: 767px) {
+    body {
+      border: none; } }
+
+.container {
+  max-width: 1216px;
+  padding: 0 16px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
