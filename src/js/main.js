@@ -16,7 +16,6 @@ fetch('https://api.github.com/users/maciejboniaszczuk/repos?sort=updated&directi
         html_url,
         name
       } = repo;
-      console.log(repo);
       list.innerHTML += `
       <li class="project">
         <div class="project__container">
@@ -25,7 +24,6 @@ fetch('https://api.github.com/users/maciejboniaszczuk/repos?sort=updated&directi
            ${
              description ? `<p class="project__description">${description}</p>` : 'No description 😞 '
            }
-          
         </div>
         <div class="project__footer">
         ${
