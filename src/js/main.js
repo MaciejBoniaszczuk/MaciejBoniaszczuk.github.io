@@ -5,7 +5,7 @@ console.log(`Hello world!`);
 
 const list = document.querySelector('.projects-list--js');
 
-fetch('https://api.github.com/users/maciejboniaszczuk/repos?sort=updated&direction=desc')
+fetch('https://api.github.com/users/maciejboniaszczuk/starred')
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;

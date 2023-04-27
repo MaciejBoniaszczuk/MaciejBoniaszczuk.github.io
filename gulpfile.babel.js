@@ -2,7 +2,8 @@
 
 import gulp from "gulp";
 import browserSync from "browser-sync";
-import sass from "gulp-sass";
+import gulpSass from "gulp-sass";
+import nodeSass from "node-sass";
 import autoprefixer from "autoprefixer";
 import postcss from "gulp-postcss";
 import sourcemaps from "gulp-sourcemaps";
@@ -10,7 +11,8 @@ import notify from "gulp-notify";
 import plumber from "gulp-plumber";
 import webpack from "webpack-stream";
 
-sass.compiler = require("node-sass");
+const sass = gulpSass(nodeSass);
+
 
 const errorHandler = err => {
   notify.onError({
