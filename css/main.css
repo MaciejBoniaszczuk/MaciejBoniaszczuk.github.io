@@ -615,4 +615,8 @@ body {
   padding: 0 16px;
   margin: 0 auto; }
 
+.white-icon {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1); }
+
 /*# sourceMappingURL=main.css.map */
